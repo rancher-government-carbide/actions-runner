@@ -43,6 +43,7 @@ RUN apt-get update -y \
     && apt-get install -y --no-install-recommends \
     sudo \
     lsb-release \
+    git \
     && rm -rf /var/lib/apt/lists/*
 
 RUN adduser --disabled-password --gecos "" --uid 1001 runner \
